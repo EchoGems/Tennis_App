@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user1_id: 1
+  user2_id: 1
+  location: MyString
+  time_slot: 2017-12-05 11:47:39
+
+two:
+  user1_id: 1
+  user2_id: 1
+  location: MyString
+  time_slot: 2017-12-05 11:47:39
