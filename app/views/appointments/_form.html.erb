@@ -12,13 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :user1_id %>
-    <%= form.number_field :user1_id, id: :appointment_user1_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :user2_id %>
-    <%= form.number_field :user2_id, id: :appointment_user2_id %>
+    <input type="hidden" name="appointment[user1_id]" value="<%= current_user.id %>">
   </div>
 
   <div class="field">

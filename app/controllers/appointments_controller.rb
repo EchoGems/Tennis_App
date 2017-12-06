@@ -15,7 +15,7 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments/new
   def new
-    @appointment = current_user.appointments.build
+    @appointment = Appointment.new
   end
 
   # GET /appointments/1/edit
@@ -25,7 +25,7 @@ class AppointmentsController < ApplicationController
   # POST /appointments
   # POST /appointments.json
   def create
-    @appointment = current_user.appointments.new(appointment_params)
+    @appointment = Appointment.new(appointment_params)
 
     respond_to do |format|
       if @appointment.save
